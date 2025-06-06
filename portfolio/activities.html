@@ -1,0 +1,191 @@
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio - Activities</title>
+  <style>
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  color: #333;
+  background: url("images/pink.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  background-color: #e583a3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.activity-section {
+  padding: 20px;
+}
+
+.activity-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255,255,255,0.9);
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.activity-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.image-grid img {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 0 40px;
+}
+
+.bottom-nav a {
+  color: #e583a3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.bottom-nav a:hover {
+  text-decoration: underline;
+  color: #e583a3;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #e583a3;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="activities.html" class="active">Activities</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="interests.html">Interests</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="activity-section">
+      <h2>Clubs & Societies</h2>
+      <div class="activity-card">
+        <img src="images/Club.png" alt="Club image">
+        <div>
+          <h3>Persatuan Sains Komputer</h3>
+          <p>Participated in many club activities such as :</p>
+		  <ul>
+           <li>MIST'24: Fundamental Stem Coding Challenge</li>
+           <li>Student to Tech Pro: Tips They Don't Teach in Class</li>
+           <li>AI Bootchamp: Building Smarter Solutions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="activity-card">
+       <div class="activity-details">
+         <h3>Volunteer Work</h3>
+         <p>I participated in two community events to help the public and improve my soft skills.</p>
+
+       <div class="volunteer-event">
+         <h4>One Hour Malaysia Clean Up</h4>
+         <div class="image-grid">
+         <img src="images/Cleanup1.jpg" alt="Clean-up 1">
+         <img src="images/Cleanup2.jpg" alt="Clean-up 2">
+         </div>
+       </div>
+
+       <div class="volunteer-event">
+         <h4>Tinkercad Workshop as facilitator</h4>
+         <div class="image-grid">
+         <img src="images/Workshop1.jpg" alt="Tinkercad Workshop 1">
+         <img src="images/Workshop2.jpg" alt="Tinkercad Workshop 2">
+         </div>
+       </div>
+       </div>
+      </div>
+
+    </section>
+    <div class="bottom-nav">
+      <a href="index.html" class="back-link">Back</a>
+      <a href="education.html" class="next-link">Next</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alesha Aqeelah. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
