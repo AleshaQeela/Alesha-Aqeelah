@@ -1,0 +1,156 @@
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio - Education</title>
+  <style>
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  color: #333;
+  background: url("images/pink.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  background-color: #e583a3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.education-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 30px 40px;
+}
+
+.education-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.education-card h2 {
+  margin-top: 0;
+  color: #e583a3;
+}
+
+.edu-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #e583a3;
+  color: white
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 0 40px;
+}
+
+.bottom-nav a {
+  color: #e583a3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.bottom-nav a:hover {
+  text-decoration: underline;
+  color: #e583a3;
+}
+
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="front.html">About Me</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="education.html" class="active">Education</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="interests.html">Interests</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="education-section">
+        <div class="education-card">
+         <img src="images/primary.jpeg" alt="Primary School Logo" class="edu-img">
+         <h2>Primary School</h2>
+         <p><strong>Years:</strong> 2013 – 2018</p>
+         <p>SK Taman Sri Pulai, Johor</p>
+      </div>
+
+      <div class="education-card">
+         <img src="images/secondary.jpeg" alt="Secondary School" class="edu-img">
+         <h2>Secondary School</h2>
+         <p><strong>Years:</strong> 2019 – 2023</p>
+         <p>SMK Bandar Tenggara 2, Johor</p>
+      </div>
+
+      <div class="education-card">
+         <img src="images/university.png" alt="University" class="edu-img">
+         <h2>University</h2>
+         <p><strong>Years:</strong> 2024 – Present</p>
+         <p>Universiti Pendidikan Sultan Idris (UPSI) – Diploma in Computer Science</p>
+      </div>
+
+    </section>
+
+    <div class="bottom-nav">
+      <a href="activities.html">Back</a>
+      <a href="qualifications.html">Next</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alesha Aqeelah. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
